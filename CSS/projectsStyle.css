@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Ubuntu-try";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "Ubuntu-try";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: 800;
+    font-display: optional;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 20px;
+    font-family: "Ubuntu-try", sans-serif;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    /* background-image: url(../Images/adam-bignell-QvQ4LHpU4LU-unsplash.jpg);
+    background-size: cover;
+    background-position: center; */
+    scroll-behavior: smooth;
+}
+hr{
+    width: 60em;
+    height: 0.25em;
+    background-color: #00ADB5;
+    border-radius: 2em;
+    border: transparent;
+}
+.home-button {
+    text-align: center;
+    margin: 1em auto;
+    background-color: rgba(245, 215, 219, 0.3);
+    border-radius: 20%;
+    overflow: hidden;
+    width: fit-content;
+    padding: 0.5em;
+    transition: transform 0.5s ease;
+}
+.home-button:hover{
+    transform: scale(1.1);
+}
+.homepage-text{
+    color:#F5F5F5;
+    margin-top: 0.5em;
+}
+.fa-house{
+    color: #F5F5F5;
+    font-size: 2em;
+    text-decoration: none;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height:fit-content;
+    margin: 2em 5em;
+}
+.text{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-weight: 800;
+    font-size: 2em;
+    color:#F5F5F5;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.library-management-system-csharp-card,
+.toffee-card,
+.shopping-system-card,
+.ds-assignment-card,
+.ds-implementation-card,
+.class-sort-algorithms-card,
+.photo-edit-filters-card,
+.cpp-tasks-card,
+.first-html-project-card{
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    width: 15em;
+    height: 20em;
+    transition: transform 0.5s ease;
+}
+.library-management-system-csharp-card:hover,
+.toffee-card:hover,
+.shopping-system-card:hover,
+.ds-assignment-card:hover,
+.ds-implementation-card:hover,
+.class-sort-algorithms-card:hover,
+.photo-edit-filters-card:hover,
+.cpp-tasks-card:hover,
+.first-html-project-card:hover{
+    transform: scale(1.1);
+}
+.card-text{
+    text-align: center;
+    margin-top: 4em;
+}
+.logo{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color:#1B3358;
+}
+.footer{
+    background-color: #222831;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+.footer a{
+    transition: transform 0.5s ease;
+    color: aliceblue;
+}
+.footer-email a{
+    transition: all 0.5s ease;
+}
+.footer-email a:hover{
+    color:#F3AA60
+}
+.footer-email {
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+.footer hr {
+    width: 15em;
+    height: 0.125em;
+    background-color: #00ADB5;
+    margin-top: 1em;
+    border-radius: 2em;
+    border: transparent;
+}

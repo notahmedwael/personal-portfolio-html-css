@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Ubuntu-try";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+    font-display: fallback;
+}
+@font-face {
+    font-family: "Ubuntu-try";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-weight: 800;
+    font-display: optional;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 20px;
+    font-family: "Ubuntu-try", sans-serif;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    /* background-image: url(../Images/laura-cleffmann-fO4s8wUWgUY-unsplash.jpg);
+    background-size: cover;
+    background-position: center; */
+    scroll-behavior: smooth;
+}
+.home-button {
+    text-align: center;
+    margin: 1em auto;
+    background-color: rgba(245, 215, 219, 0.3);
+    border-radius: 20%;
+    overflow: hidden;
+    width: fit-content;
+    padding: 0.5em;
+    transition: transform 0.5s ease;
+}
+.home-button:hover{
+    transform: scale(1.1);
+}
+.fa-house {
+    color:#F5F5F5;
+    font-size: 2em;
+    text-decoration: none;
+}
+.homepage-text{
+    color: #F5F5F5;
+    margin-top: 0.5em;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin: 2em 5em;
+}
+.socials-header{
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+    color: #F5F5F5;
+    width: 100%; 
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em; 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    width: 15em;
+    height: 20em;
+    transition: transform 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.facebook-icon, .x-icon, .instagram-icon, .whatsapp-icon, .telegram-icon, .tiktok-icon, .discord-icon, .linkedin-icon, .github-icon{
+    font-size: 3em;
+}
+.facebook-icon{
+    color:#1877F2;
+}
+.text {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em;
+}
+.list-item{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.facebook-icon:hover, .x-icon:hover, .instagram-icon:hover, .whatsapp-icon:hover, .telegram-icon:hover, .tiktok-icon:hover, .discord-icon:hover, .linkedin-icon:hover, .whatsapp-icon:hover, .github-icon:hover{
+    animation: spin 1s linear infinite;
+}
+.fa-star:hover{
+    animation: spin 1s linear infinite;
+    scale: 1.2;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fa-star{
+    color: gold;
+    margin-right: 0.5em;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.facebook-see-more{
+    background-color: #1877F2;
+}
+.x-see-more, 
+.tiktok-see-more,
+.github-see-more{
+    background-color: #181717;
+}
+.instagram-see-more{
+    background-color: #E4405F;
+}
+.whatsapp-see-more{
+    background-color: #25D366;
+}
+.telegram-see-more{
+    background-color: #0088CC;
+}
+.discord-see-more{
+    background-color: #7289DA;
+}
+.linkedin-see-more{
+    background-color: #0A66C2;
+}
+.facebook-see-more,
+.x-see-more,
+.instagram-see-more,
+.whatsapp-see-more,
+.telegram-see-more,
+.tiktok-see-more,
+.discord-see-more,
+.linkedin-see-more,
+.github-see-more{
+    cursor: pointer;
+    margin: 3em auto;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    width: 5em;
+    text-align: center;
+}
+.x-icon, .github-icon, .tiktok-icon{
+    color: #181717;
+}
+.instagram-icon{
+    color: #E4405F;
+}
+.telegram-icon{
+    color: #0088CC;
+}
+.discord-icon{
+    color: #7289DA;
+}
+.linkedin-icon{
+    color: #0A66C2;
+}
+.whatsapp-icon{
+    color: #25D366;
+}
+.footer{
+    background-color: #222831;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.footer a{
+    transition: transform 0.5s ease;
+    color: aliceblue;
+}
+.footer-email a{
+    transition: all 0.5s ease;
+}
+
+.footer-email a:hover{
+    color:#F3AA60
+}
+
+
+.footer-email {
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+
+.footer hr {
+    width: 15em;
+    height: 0.125em;
+    background-color: #00ADB5;
+    margin-top: 1em;
+    border-radius: 2em;
+    border: transparent;
+}
